@@ -1,0 +1,9 @@
+QFrame#Item{
+    background-color: rgba(0, 0, 0, 0.15);
+    border: 2px solid #11223F;
+    border-radius: 4px;
+}
+QLabel {
+    border: 2px solid white;
+    border-radius: 4px;
+}
