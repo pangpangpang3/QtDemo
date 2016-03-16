@@ -1,0 +1,35 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title></title>
+<style id="system" type="text/css">h1,h2,h3,h4,h5,h6,p,blockquote {    margin: 0;    padding: 0;}body {    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;    font-size: 13px;    line-height: 18px;    color: #737373;    margin: 10px 13px 10px 13px;}a {    color: #0069d6;}a:hover {    color: #0050a3;    text-decoration: none;}a img {    border: none;}p {    margin-bottom: 9px;}h1,h2,h3,h4,h5,h6 {    color: #404040;    line-height: 36px;}h1 {    margin-bottom: 18px;    font-size: 30px;}h2 {    font-size: 24px;}h3 {    font-size: 18px;}h4 {    font-size: 16px;}h5 {    font-size: 14px;}h6 {    font-size: 13px;}hr {    margin: 0 0 19px;    border: 0;    border-bottom: 1px solid #ccc;}blockquote {    padding: 13px 13px 21px 15px;    margin-bottom: 18px;    font-family:georgia,serif;    font-style: italic;}blockquote:before {    content:"C";    font-size:40px;    margin-left:-10px;    font-family:georgia,serif;    color:#eee;}blockquote p {    font-size: 14px;    font-weight: 300;    line-height: 18px;    margin-bottom: 0;    font-style: italic;}code, pre {    font-family: Monaco, Andale Mono, Courier New, monospace;}code {    background-color: #fee9cc;    color: rgba(0, 0, 0, 0.75);    padding: 1px 3px;    font-size: 12px;    -webkit-border-radius: 3px;    -moz-border-radius: 3px;    border-radius: 3px;}pre {    display: block;    padding: 14px;    margin: 0 0 18px;    line-height: 16px;    font-size: 11px;    border: 1px solid #d9d9d9;    white-space: pre-wrap;    word-wrap: break-word;}pre code {    background-color: #fff;    color:#737373;    font-size: 11px;    padding: 0;}@media screen and (min-width: 768px) {    body {        width: 748px;        margin:10px auto;    }}</style><style id="custom" type="text/css"></style></head>
+<body marginheight="0"><h2>QPushButton</h2>
+<h3>关于按钮的细节描述</h3>
+<p>QPushButton控件提供了一个命令按钮。
+这个按压的按钮，或者命令按钮也就是在任何用户界面上使用的最普遍的控件。按下（或者点击）按钮来触发计算机的一些动作，或者响应一个问题。非常典型的按钮例如常见的：确认，应用，取消，关闭，是，否以及帮助等命令按钮。
+
+</p>
+<p>命令按钮通常是个矩形的，而且按钮上面会显示描述其相应的动作。快捷键按钮一般写作一个引用符号&amp;加上特定的文本字符描述。例如：
+
+</p>
+<p>QPushButton *button = new QPushButton("&amp;Download", this);
+
+</p>
+<p>这个例子中的快捷键是<em>Alt+D</em>, 要知道更多的细节查看QShortcut的描述文档（为了显示真正的&amp;（与符号），需要用&amp;&amp;来表示）。
+
+</p>
+<p>上述例子当中展示了一个带文本标签的button, 也可以选择一个小的图标放在button上面。这些功能可以在初始化构造函数的时候设置，也可以在后面通过使用<code>setText()</code>, <code>setIcon()</code>来设置。如果这个button是被金庸的，这个button上的文本和图片也应当被设置成禁用的样式。
+
+</p>
+<p>一个按压button会发出一个点击的信号，当这个信号被鼠标，空格键，或者是快捷键触发的时候。可以通过按钮的某些动作连接到这个信号。按钮也提供了少量的常见的信号，例如 <code>pressed()</code> 和 <code>released()</code>.
+
+</p>
+<p>在对话框中的命令按钮是由默认按钮和自动默认按钮，也就是说他们可能在收到键盘输入焦点是自动变成默认按钮。默认按钮被触发当用户在当前的对话框中按下 <code>Enter</code>和 <code>Return</code>键。你可以改变默认按钮通过 <code>setAutoDefault()</code>. 注意：默认按钮通常保留一点额外的空间因为这是在画默认的按钮的indicator是必须的。如果你不希望在按钮的周围留些空间，可以设置 <code>setAutoDefault(false)</code>。
+
+</p>
+<p>重要的是，在过去十年中button控件为了适应很多的变化也改变了很多。微软风格的指南展示了十多种不同的按钮窗口风格，文字显示所有的组合特性都被考虑在内。其中最重要的模式和状态是：
+- 可
+
+
+</p>
+<p>Edit By <a href="http://mahua.jser.me">MaHua</a></p>
+</body></html>
