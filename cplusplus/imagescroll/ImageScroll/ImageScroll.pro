@@ -13,6 +13,16 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        widget.cpp
+        widget.cpp \
+    scrollarea.cpp \
+    imagewidget.cpp
 
-HEADERS  += widget.h
+HEADERS  += widget.h \
+    scrollarea.h \
+    imagewidget.h
+
+RESOURCES += \
+    resource.qrc
+
+DISTFILES += \
+    ImageScroll.pro.user
