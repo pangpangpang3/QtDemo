@@ -1,0 +1,4 @@
+#ifndef IMAGEWIDGET_H
+#define IMAGEWIDGET_H
+
+#endif // IMAGEWIDGET_H
