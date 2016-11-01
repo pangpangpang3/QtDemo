@@ -1,6 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file>img/skype.png</file>
-        <file>img/google-chrome.png</file>
-    </qresource>
-</RCC>
