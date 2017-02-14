@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>current_default.conf</file>
+        <file>default_shortcut.conf</file>
+    </qresource>
+</RCC>
