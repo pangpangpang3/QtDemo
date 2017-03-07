@@ -12,4 +12,15 @@ TARGET = scence_demo1
 TEMPLATE = app
 
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    imageview.cpp \
+    imagescene.cpp \
+    mainwidget.cpp
+
+RESOURCES += \
+    rec.qrc
+
+HEADERS += \
+    imageview.h \
+    imagescene.h \
+    mainwidget.h
