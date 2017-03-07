@@ -34,14 +34,11 @@ void AppThemeManager::setTheme(const QString theme)
 QString AppThemeManager::getQssForWidget(const QString className, const QString &theme)
 {
     QString qss;
-
     QString themeName = theme.isEmpty() ? m_theme : theme;
     QFile themeFile(QString(":/resources/%1/%2.qss").arg(themeName).arg(className));
 
-
     if (themeFile.open(QIODevice::ReadOnly | QIODevice::Text)) {
         qss = themeFile.readAll();
-
         themeFile.close();
     }
 
