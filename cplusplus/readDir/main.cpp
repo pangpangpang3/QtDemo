@@ -2,12 +2,19 @@
 #include <QApplication>
 #include <QDir>
 #include <QDebug>
+#include <QTemporaryFile>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 //    MainWindow w;
 //    w.show();
+
+    QTemporaryFile file;
+    if (file.open()) {
+        qDebug() << "^^^^^^^^" << file.fileName() << file.fileTemplate();
+        // file.fileName() returns the unique file name
+    }
 
     QDir dir(QDir("/home/hui/图片/Wallpapers/only").absolutePath());
     qDebug() << "dir:" << dir;

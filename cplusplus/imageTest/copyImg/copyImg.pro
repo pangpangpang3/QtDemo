@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2015-09-07T16:06:08
+# Project created by QtCreator 2017-05-18T16:00:54
 #
 #-------------------------------------------------
 
@@ -8,16 +8,14 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = buttonone
+TARGET = copyImg
 TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        widget.cpp \
-         iconbutton.cpp
+        mainwindow.cpp
 
-HEADERS  += widget.h \
-         iconbutton.h
+HEADERS  += mainwindow.h
 
 RESOURCES += \
-    image.qrc
+    res.qrc

@@ -1,5 +1,8 @@
 <RCC>
     <qresource prefix="/">
         <file>../img/lock_press.png</file>
+        <file>../img/oval_active.png</file>
+        <file>../img/oval_hover.png</file>
+        <file>../img/oval_normal.png</file>
     </qresource>
 </RCC>

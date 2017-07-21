@@ -79,7 +79,7 @@ void MainWindow::populateScene()
 {
     scene = new QGraphicsScene;
 
-    QImage image(":/qt4logo.png");
+    QImage image(":/191_145009_27d20.jpg");
 
     // Populate scene
     int xx = 0;
