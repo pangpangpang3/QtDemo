@@ -11,3 +11,6 @@ unix:!mac:!vxworks:!integrity:LIBS += -lm
 # install
 target.path = $$[QT_INSTALL_EXAMPLES]/corelib/threads/mandelbrot
 INSTALLS += target
+
+RESOURCES += \
+    resc.qrc
