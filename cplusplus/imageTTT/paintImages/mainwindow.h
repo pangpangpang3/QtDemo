@@ -20,6 +20,8 @@ public slots:
     void grabHistroyImage();
     void popActiveItem();
 
+    void layerImage();
+
 signals:
     void grabImage();
     void clicked();
@@ -43,6 +45,7 @@ private:
     int m_activeOrder;
     int m_hoverOrder;
     int m_grabImageNum;
+
     QList<QRect> m_allImagesRect;
     QList<QRect> m_imagesRect;
 
@@ -55,7 +58,12 @@ private:
 
     QTimer* m_timer;
 
-    QPixmap m_backgroundImage;
+    QPixmap m_backgroundPixmap;
+    QPixmap m_maskPixmap;
+
+    QPoint m_clickOffset = QPoint(0,0);
+    QPoint m_topOrigin = QPoint(0,0);
+    QPixmap test_topPixmap = QPixmap(":/image/u=2570979872,945446861&fm=26&gp=0.jpg");
 };
 
 #endif // MAINWINDOW_H
